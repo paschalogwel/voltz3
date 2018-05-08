@@ -7,7 +7,7 @@ License Life Time Free
 @font-face {
 	font-family: 'Conv_Lato-Regular';
 	src: url('fonts/Lato-Regular.eot');
-	src: local('☺'), url('fonts/Lato-Regular.woff') format('woff'), url('fonts/Lato-Regular.ttf') format('truetype'), url('fonts/Lato-Regular.svg') format('svg');
+	src: local('☺'), url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.ttf') format('truetype'), url('../fonts/Lato-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -25,7 +25,7 @@ a:hover {
 html, body{
 	font-family:'Conv_Lato-Regular',Sans-Serif;
 	font-size: 100%;
-    background:#fff; 
+    background:#fff;
 }
 body a{
 	transition:0.5s all;
@@ -35,10 +35,10 @@ body a{
 	-ms-transition:0.5s all;
 }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
-    Start MENU part  
+    Start MENU part
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .header{
-	padding:10px 0;
+	/* padding:10px 0; */
 	background:#000 ;
 	position:fixed ;
 	width:100%;
@@ -84,15 +84,15 @@ body a{
 	-moz-transform: rotateY(30deg);
 	-ms-transform: rotateY(30deg);
 	transform: rotateY(30deg);
-} 
+}
 .toggleMenu {
 	display:  none;
    	padding:0;
 }
 .nav:before,
 .nav:after {
-    content: " "; 
-    display: table; 
+    content: " ";
+    display: table;
 }
 .nav:after {
     clear: both;
@@ -129,7 +129,7 @@ body a{
     	top:15px;
     }
     .nav li ul{
-    	width:100%;   	
+    	width:100%;
     }
     .menu ul{
     	margin:0;
@@ -156,13 +156,13 @@ body a{
      }
  }
 /* ===================================================================================================
-     end menu part  
+     end menu part
 	================================================================================================== */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
-    Start abouts part  
+    Start abouts part
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 #abouts {
-	background: #D82133 ;
+	background: #d4af37;
 	text-align:center ;
 	text-transform:uppercase ;
 	color:#fff ;
@@ -171,10 +171,10 @@ body a{
 	font-family:'Conv_Lato-Regular',Sans-Serif;
 
 }
-	
+
 .tittle {
 	text-align:center ;
-	color:#000 ;
+	color: purple;
 	font-family:'Conv_Lato-Regular',Sans-Serif
 }
 	.tittle h2 {
@@ -183,7 +183,7 @@ body a{
 		padding:10px 0;
 		margin:0 0 ;
 	}
-	
+
 .abouts {
 		text-align:center ;
 		text-transform:uppercase ;
@@ -191,11 +191,11 @@ body a{
 		margin:0 0;
 		font-family:'Conv_Lato-Regular',Sans-Serif
 	}
-	
+
 	.abouts h3 {
 		text-align:center ;
 		text-transform:uppercase ;
-		color: #fff;
+		color: black;
 		padding:10px 0;
 		margin:0 0 ;
 		margin-top:-1.5em;
@@ -206,10 +206,10 @@ body a{
 		line-height:22px;
 		font-size:14px;
 		padding:5px 0;
-		margin:0 0; 
-		color:#F9F5AE ;
+		margin:0 0;
+		color:purple ;
 	}
-	
+
 /*icon effects*/
 .hi-icon-wrap {
 	text-align: center;
@@ -227,7 +227,7 @@ body a{
 	text-align: center;
 	position: relative;
 	z-index: 1;
-	color: #1D2025; 
+	color: #1D2025;
 	text-decoration: none ;
 }
 
@@ -237,8 +237,8 @@ body a{
 	width: 100%;
 	height: 100%;
 	content: '';
-	-webkit-box-sizing: content-box; 
-	-moz-box-sizing: content-box; 
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 
 }
@@ -354,10 +354,10 @@ body a{
 }
 
 /* ===================================================================================================
-     end abouts part  
+     end abouts part
 	================================================================================================== */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
-    Start Meat TEAm part  
+    Start Meat TEAm part
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 #team {
 	background: #fff ;
@@ -372,7 +372,7 @@ body a{
 }
 	.team {
 	text-align:center ;
-	color: #030303 ; 
+	color: #030303 ;
 	padding:10px 0;
 	margin: 0 0;
 	font-family:'Conv_Lato-Regular',Sans-Serif
@@ -385,7 +385,7 @@ body a{
 	}
 	.member {
 		text-align:center ;
-		text-transform:uppercase ; 
+		text-transform:uppercase ;
 		background:#F6F6AE ;
 		font-family:'Conv_Lato-Regular',Sans-Serif
 	}
@@ -395,11 +395,11 @@ body a{
 		padding:10px 0;
 		margin:0 0;
 	}
-	.member h5 { 
+	.member h5 {
 		text-transform:none ;
 		text-align:center ;
 		padding:8px 0;
-		margin:0 0; 
+		margin:0 0;
 		color:#1D2025 ;
 	}
 .view {
@@ -410,7 +410,7 @@ body a{
    position: relative;
    text-align: center;
    cursor: default;
-   background: rgb(249,245,174) ;
+   background: #d4af37 ;
 }
 .view .mask,.view .content {
     width:250px;
@@ -447,7 +447,7 @@ body a{
    padding: 7px 14px;
    background: #000;
    color: #fff;
-   text-transform: uppercase; 
+   text-transform: uppercase;
    margin: 20px 0 0 0;
 }
 .view a.info:hover {
@@ -497,26 +497,26 @@ body a{
 }
 
 		.social {
-			 display:inline-block; 
+			 display:inline-block;
 			 cursor: pointer;
   			 width: 42px;
   			  height: 42px;
   			  margin-right: 5px;
 			  text-align:center ;
-			  font-size:24px ; 
+			  font-size:24px ;
 			  padding:8px 0 ;
 			  margin:0 0;
  				}
-		.facebook { 
-			background: #1D2025 ; 
- 			color: #F6F6AE ; 
+		.facebook {
+			background: #1D2025 ;
+ 			color: #F6F6AE ;
   }
 		.facebook:hover {
-			 background: #DF4A32; 
+			 background: #DF4A32;
 	 }
 
 /* ===================================================================================================
-     end meet Team part  
+     end meet Team part
 	================================================================================================== */
 /* --------------------LOADING MASK------------------------ */
 #loading-mask {
@@ -543,10 +543,10 @@ body a{
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
-    Start SErvices part  
+    Start SErvices part
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 #services {
-	background: #F6F6AE ;
+	background: #d4af37 ;
 	color: #1D2025 ;
 	text-align:center;
 	text-transform:uppercase;
@@ -558,7 +558,7 @@ body a{
 }
 	.services {
 	text-align:center ;
-	color: #1D2025 ; 
+	color: #1D2025 ;
 	padding:10px 0;
 	margin: 0 0;
 	font-family:'Conv_Lato-Regular',Sans-Serif
@@ -569,10 +569,10 @@ body a{
 		line-height:22px;
 		font-size:14px;
 		padding:5px 0;
-		margin:0 0; 
-		color: #D82133 ;
+		margin:0 0;
+		color: purple ;
 	}
-	.services h4 { 
+	.services h4 {
 		color: #000;
 		padding:10px 0;
 		margin:0 0 ;
@@ -581,8 +581,8 @@ body a{
 	.serviceicon {
 		padding: 0px 0px ;
 	}
-	
-	
+
+
 /* Effect 9 */
 .hi-icon-effect-9 .hi-icon {
 	-webkit-transition: box-shadow 0.2s;
@@ -595,7 +595,7 @@ body a{
 	top: 0;
 	left: 0;
 	padding: 0;
-	box-shadow: 0 0 0 3px #D82133;
+	box-shadow: 0 0 0 3px purple;
 	border-radius:50%;
 	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
 	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
@@ -613,13 +613,13 @@ body a{
 
 .hi-icon-effect-9a .hi-icon:hover {
 	box-shadow: 0 0 0 10px #1C1C1C;
-	color: #D82133;
+	color: purple;
 }
 /* ===================================================================================================
-     end SErvices part  
+     end SErvices part
 	================================================================================================== */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
-    Start Protofilo part  
+    Start Protofilo part
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 #portfolio {
 	background: #FFFFFF;
@@ -630,7 +630,7 @@ body a{
 	font-family:'Conv_Lato-Regular',Sans-Serif;
 	padding:5em 0;
 	margin:0 0;
-}	
+}
 .mix-filter {
 	list-style: none;
 	margin:0 0 20px 0;
@@ -663,7 +663,7 @@ body a{
 /*Portfolio Hover*/
 .mix-grid .mix {
 	position: relative;
-	overflow: hidden;	
+	overflow: hidden;
 	margin-bottom: 15px;
 }
 
@@ -684,7 +684,7 @@ body a{
 	-o-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
-	-webkit-transition: all 0.5s ease;	
+	-webkit-transition: all 0.5s ease;
 }
 
 .mix-grid .mix:hover .mix-details {
@@ -693,11 +693,11 @@ body a{
 	-o-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
-	-webkit-transition: all 0.5s ease;	
+	-webkit-transition: all 0.5s ease;
 }
 
 .mix-grid .mix .mix-details h4 {
-	color: #1D2025;	
+	color: #1D2025;
 	margin-top: 30px;
 	padding: 0 10px;
 }
@@ -711,12 +711,12 @@ body a{
 	font-size: 24px;
 }
 
-.mix-grid .mix a.mix-link, 
+.mix-grid .mix a.mix-link,
 .mix-grid .mix a.mix-preview {
 	color: #DF4A32;
 	display: block;
 	cursor: pointer;
-	margin-top: 10px; 
+	margin-top: 10px;
 	position: absolute;
 	padding: 10px 15px;
 	background: #DF4A32;
@@ -742,7 +742,7 @@ body a{
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 
 	.mix-grid .mix.col-md-6.col-sm-6 .mix-details {
 		height: 50%;
@@ -750,23 +750,23 @@ body a{
 
 }
 
-@media (min-width: 768px) and (max-width: 991px) { 
-	
+@media (min-width: 768px) and (max-width: 991px) {
+
 	.mix-grid .mix a.mix-link,
 	.mix-grid .mix a.mix-preview {
 		margin-top: 5px;
 	}
 
-}	
+}
 
 /* ===================================================================================================
-     end Protofilo part  
+     end Protofilo part
 	================================================================================================== */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
-    Start silder part  
+    Start silder part
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 #test {
-	background: #D82133;
+	background: #d4af37;
 	color:#F6F6AE;
 	text-align:center;
 	text-transform:uppercase;
@@ -781,10 +781,10 @@ body a{
 		font-family:'Conv_Lato-Regular',Sans-Serif
 	}
 /* ===================================================================================================
-     end menu part  
+     end menu part
 	================================================================================================== */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
-    Start client part  
+    Start client part
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .client {
 	background: #fff;
@@ -796,8 +796,8 @@ body a{
  ;
 	padding:5em 0;
 	margin:0 0;
-}	
-	
+}
+
 #flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
 display:none;
 }
@@ -813,8 +813,8 @@ display:none;
     width:99999px;
     margin:0px;
     padding:0px;
-    list-style-type:none;   
-    text-align:center;  
+    list-style-type:none;
+    text-align:center;
 }
 
 .nbs-flexisel-inner {
@@ -823,7 +823,7 @@ display:none;
     width:100%;
     border-radius:5px;
     -moz-border-radius:5px;
-    -webkit-border-radius:5px;  
+    -webkit-border-radius:5px;
 }
 
 .nbs-flexisel-item {
@@ -849,7 +849,7 @@ display:none;
 .nbs-flexisel-nav-left,
 .nbs-flexisel-nav-right {
     width: 22px;
-    height: 22px; 
+    height: 22px;
     position: absolute;
     cursor: pointer;
     z-index: 100;
@@ -868,10 +868,10 @@ display:none;
 
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
-    Start client part  
+    Start client part
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 #contact {
-	background: #D82133 no-repeat;
+	background: #d4af37 no-repeat;
 	color: #1D2025 ;
 	text-align:center;
 	text-transform:uppercase;
@@ -887,18 +887,18 @@ display:none;
 
 .contact-right p {
   font-size: 1.1em;
-  color: #fff;
+  color: purple;
   margin-top: 0.3em;
   text-align:left ;
   text-transform:none;
   padding:10px 0;
 }
-.contact-right h3 { 
+.contact-right h3 {
 	text-align:left ;
 	color:#000 ;
 	text-transform:none;
 }
-.testimonial_carousel_caption p { 
+.testimonial_carousel_caption p {
 	text-transform:none ;
 }
 .arrow {
@@ -961,7 +961,7 @@ display:none;
   -moz-transition: 0.5s all ease;
   -o-transition: 0.5s all ease;
   -ms-transition: 0.5s all ease;
-    background: none; 
+    background: none;
 	float:right ;
 }
 .contact-left input[type="submit"]:hover{
@@ -993,10 +993,10 @@ display:none;
 	filter: alpha(opacity=0);
 }
 /* ===================================================================================================
-     end Contact part  
+     end Contact part
 	================================================================================================== */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
-    Start footer part  
+    Start footer part
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 #footer {
 	background:#000 ;
@@ -1021,74 +1021,74 @@ display:none;
 	}
 	/* start soc_icons */
 	.right {
-		float:right ; 
+		float:right ;
 	}
 
 .socias {
-	 display:inline-block; 
+	 display:inline-block;
 	 cursor: pointer;
   	 width: 32px;
   	 height: 32px;
   	 margin-right: 5px;
 	 text-align:center ;
-	font-size:24px ; 
+	font-size:24px ;
  }
-		.facebooks { 
-			background: #D82033; 
- 			color: #000000 ; 
+		.facebooks {
+			background: #D82033;
+ 			color: #000000 ;
   		}
 		.facebooks:hover {
-		 background: #3B5998; 
+		 background: #3B5998;
 	   }
-	   .twi { 
-			background: #D82033; 
- 			color: #000000 ; 
+	   .twi {
+			background: #D82033;
+ 			color: #000000 ;
   		}
 		.twi:hover {
-		 background: #48C4D2; 
+		 background: #48C4D2;
 	   }
-	   .read { 
-			background:#D82033; 
- 			color: #000000 ; 
+	   .read {
+			background:#D82033;
+ 			color: #000000 ;
   		}
 		.read:hover {
-		 background: #FE9B04; 
+		 background: #FE9B04;
 	   }
-	   .plus { 
-			background:#D82033; 
- 			color: #000000 ; 
+	   .plus {
+			background:#D82033;
+ 			color: #000000 ;
   		}
 		.plus:hover {
-		 background: #D94A39; 
+		 background: #D94A39;
 	   }
-	   .pit { 
-			background:#D82033; 
- 			color: #000000 ; 
+	   .pit {
+			background:#D82033;
+ 			color: #000000 ;
   		}
 		.pit:hover {
-		 background: #CB2027; 
+		 background: #CB2027;
 	   }
-	   
+
  /* ===================================================================================================
-     end footer part  
+     end footer part
 	================================================================================================== */
 /*-- sticky-nav --*/
 /*---- responsive-design -----*/
 @media(max-width:1440px){
-	
+
 }
 @media(max-width:1366px){
-	
+
 }
 @media(max-width:1280px){
-	
+
 }
 @media(max-width:1024px){
-	
+
 	.contact-left input[type="email"] {
 	    margin: 0 .35em 1em 0.35em;
 	}
-	.contact-left input[type="text"] { 
+	.contact-left input[type="text"] {
 		width:100%
 	}
 	.view ,.view .mask, .view .content{
@@ -1099,7 +1099,7 @@ display:none;
 	}
 }
 @media(max-width:800px){
-	
+
 	 span.menu{
 		width:35px;
 		height:35px;
@@ -1142,8 +1142,8 @@ display:none;
 	.top-menu ul li a:hover{
 		color:#0000;
 	}
-	
-	
+
+
 	.contact-left {
 	    width: 50%;
 	    float: left;
@@ -1182,7 +1182,7 @@ display:none;
 	}
 	#contact {
 		padding:0 0;
-	
+
 	}
 	.contact-left input[type="submit"] {
 		float:right ;
@@ -1190,7 +1190,7 @@ display:none;
 
 }
 @media(max-width:768px){
-	
+
 	 span.menu{
 		width:35px;
 		height:35px;
@@ -1233,7 +1233,7 @@ display:none;
 	.top-menu ul li a:hover{
 		color:#0000;
 	}
-	
+
 	.contact-left {
 	    width: 50%;
 	    float: left;
@@ -1274,20 +1274,20 @@ display:none;
 	}
 }
 @media(max-width:736px){
-	
+
 }
 @media(max-width:667px){
-	
+
 }
 @media(max-width:640px){
-	
+
 	.contact-left {
 	    padding: 0;
 	}
 	.contact-right {
 	    padding: 0;
 	}
-	
+
 	.contact-left input[type="submit"] {
 	    width: 42%;
 	}
@@ -1299,13 +1299,13 @@ display:none;
 	.view {
 		margin:10px 5em ;
 	}
-	
+
 }
 @media(max-width:568px){
-	
+
 }
 @media(max-width:480px){
-	
+
 	.contact-left {
 	    width: 100%;
 	    float: none;
@@ -1315,17 +1315,17 @@ display:none;
 	    width: 100%;
 	    float: none;
 	}
-	
-	
+
+
 }
-@media(max-width:414px){ 
+@media(max-width:414px){
 	#contact {
 		padding:0 0;
 	}
-	
+
 }
 @media(max-width:384px){
-	
+
 }
 @media(max-width:375px){
 	#contact {
@@ -1350,10 +1350,10 @@ display:none;
 	.view {
 		margin:8px 8px 8px 8px ;
 	}
-	
+
 }
 @media(max-width:320px){
-	
+
 	.contact-right p {
 		margin-top:-3px ;
 	}
@@ -1380,4 +1380,7 @@ display:none;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+}
+html{
+	font-family: century
 }
